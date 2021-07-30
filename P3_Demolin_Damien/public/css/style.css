@@ -1,3 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+*,
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
 
+@font-face {
+  font-family: Roboto;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
+@font-face {
+  font-family: Shrikhand;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+}
+header {
+  font-family: Shrikhand, Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 5rem;
+  display: grid;
+  grid-column: "1fr,1fr";
+}
 
 /*# sourceMappingURL=style.css.map */
