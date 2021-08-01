@@ -10,6 +10,10 @@
   text-decoration: none;
 }
 
+.fa, .fas {
+  font: 900;
+}
+
 @font-face {
   font-family: Roboto;
   src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
@@ -19,11 +23,17 @@
   src: url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 }
 header {
-  font-family: Shrikhand, Arial, Helvetica, sans-serif;
+  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
   text-align: center;
-  font-size: 5rem;
-  display: grid;
-  grid-column: "1fr,1fr";
+}
+header .header--menu {
+  position: relative;
+  text-align: center;
+}
+header a {
+  position: absolute;
+  left: 5%;
+  top: 30%;
 }
 
 /*# sourceMappingURL=style.css.map */
