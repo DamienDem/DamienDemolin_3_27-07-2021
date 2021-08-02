@@ -1,0 +1,11 @@
+.location {
+    display: flex;
+    justify-content: center;
+    padding: 5px 35px;
+    background: #eaeaea;
+    & input {
+        border:none;
+        margin-left: 20px;
+        background: #eaeaea;
+    }
+}

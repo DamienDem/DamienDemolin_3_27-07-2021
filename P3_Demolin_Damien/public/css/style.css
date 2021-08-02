@@ -36,4 +36,39 @@ header a {
   top: 30%;
 }
 
+.location {
+  display: flex;
+  justify-content: center;
+  padding: 5px 35px;
+  background: #eaeaea;
+}
+.location input {
+  border: none;
+  margin-left: 20px;
+  background: #eaeaea;
+}
+
+.presentation {
+  background: #f6f6f6;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: 30px;
+}
+.presentation__item {
+  text-align: center;
+}
+.presentation__item--button {
+  box-shadow: 0 0 15px #0000002e;
+  border-radius: 25px;
+  width: fit-content;
+  height: 50px;
+  background: #9356dc;
+  color: white;
+  display: grid;
+  align-items: center;
+  padding: 15px;
+}
+
 /*# sourceMappingURL=style.css.map */

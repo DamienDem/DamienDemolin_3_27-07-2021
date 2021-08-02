@@ -1,0 +1,22 @@
+.presentation {
+    background: #f6f6f6;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 30px;
+    &__item {
+        text-align: center;
+        &--button {
+            @include shadow ;
+            @include radius ;
+            width: fit-content;
+            height: 50px;
+            background: #9356dc;
+            color: white;
+            display: grid;
+            align-items: center;
+            padding: 15px;
+        }
+    }
+}
