@@ -3,9 +3,12 @@
     justify-content: center;
     padding: 5px 35px;
     background: #eaeaea;
+    padding: 15px;
+    & .locaton__map-marker {
+        margin: 0 15px;
+    }
     & input {
         border:none;
-        margin-left: 20px;
         background: #eaeaea;
     }
 }

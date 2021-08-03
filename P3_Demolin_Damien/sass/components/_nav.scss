@@ -1,0 +1,20 @@
+nav {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr 4fr;
+    & .search-bar {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        &__option {
+            margin: 15px 0;
+            @include radius;
+            height: 50px;
+            background: #eaeaea;
+            display: flex;
+            padding: 15px;
+            & i {
+                margin: 0px 10px;
+            }
+        }
+    }
+}
