@@ -10,6 +10,6 @@
     font: 900;
 } 
 img {
-    width: 340px;
-    height: 170px;
+    object-fit: cover;
+    max-height: 170px;
 }
