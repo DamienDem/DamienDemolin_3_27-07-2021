@@ -1,0 +1,21 @@
+main {
+    background-color: #eaeaea;
+    & .restaurants {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        & .restaurant {
+            margin: 15px;
+            @include radius;
+            @include shadow;
+            background: white;
+            & img {
+                border-radius: 15px 15px 0px 0px;
+            }
+            &__description {
+                color: black;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}

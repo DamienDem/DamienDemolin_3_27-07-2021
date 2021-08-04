@@ -71,7 +71,7 @@ header a {
   border-radius: 25px;
   width: fit-content;
   height: 50px;
-  background: #9356dc;
+  background: linear-gradient(180deg, #ff79da 0%, #b260db 100%);
   color: white;
   display: grid;
   align-items: center;
@@ -97,6 +97,28 @@ nav .search-bar__option {
 }
 nav .search-bar__option i {
   margin: 0px 10px;
+}
+
+main {
+  background-color: #eaeaea;
+}
+main .restaurants {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+main .restaurants .restaurant {
+  margin: 15px;
+  border-radius: 25px;
+  box-shadow: 0 0 15px #0000002e;
+  background: white;
+}
+main .restaurants .restaurant img {
+  border-radius: 15px 15px 0px 0px;
+}
+main .restaurants .restaurant__description {
+  color: black;
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
