@@ -38,6 +38,7 @@ header {
 header .header--menu {
   position: relative;
   text-align: center;
+  top: 20px;
 }
 header a {
   position: absolute;
@@ -120,7 +121,7 @@ nav .search-bar__option::before {
 
 main {
   background-color: #eaeaea;
-  padding: 40px 10px;
+  padding: 40px 20px;
 }
 main .restaurants {
   display: grid;
@@ -176,12 +177,13 @@ footer ul li a {
 
 .background-img img {
   max-height: 300px;
+  position: relative;
+  top: 40px;
 }
 
 .menu {
   border-radius: 45px 45px 0 0;
   position: relative;
-  top: -80px;
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -195,12 +197,27 @@ footer ul li a {
 }
 
 .item {
-  display: grid;
-  grid-template-columns: 6fr 1fr;
+  display: flex;
+  justify-content: space-between;
   padding: 10px;
   border-radius: 15px;
   background: white;
   margin: 15px 0;
+}
+.item__price {
+  display: flex;
+  align-items: flex-end;
+}
+
+.button {
+  background: linear-gradient(180deg, #ff79da 0%, #b260db 100%);
+  padding: 15px 40px;
+  border-radius: 15px;
+  color: white;
+  width: fit-content;
+  position: relative;
+  left: calc(50% - 90px);
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
