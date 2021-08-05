@@ -1,0 +1,28 @@
+.background-img {
+    & img {
+        max-height: 300px;
+    }
+}
+.menu {
+    border-radius: 45px 45px 0 0;
+    position: relative;
+    top: -80px;
+    display: grid;
+    grid-template-columns: 1fr;
+    & .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    & .starter {
+        margin-top: 40px;
+    }
+}
+.item {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    padding: 10px;
+    border-radius: 15px;
+    background: white;
+    margin: 15px 0;
+}

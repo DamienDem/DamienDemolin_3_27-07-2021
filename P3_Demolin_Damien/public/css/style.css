@@ -17,6 +17,7 @@
 img {
   object-fit: cover;
   max-height: 170px;
+  width: 100%;
 }
 
 h1 {
@@ -42,6 +43,7 @@ header a {
   position: absolute;
   left: 5%;
   top: 30%;
+  color: #353535;
 }
 
 .location {
@@ -170,6 +172,35 @@ footer ul li {
 }
 footer ul li a {
   color: white;
+}
+
+.background-img img {
+  max-height: 300px;
+}
+
+.menu {
+  border-radius: 45px 45px 0 0;
+  position: relative;
+  top: -80px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.menu .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .starter {
+  margin-top: 40px;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  padding: 10px;
+  border-radius: 15px;
+  background: white;
+  margin: 15px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
