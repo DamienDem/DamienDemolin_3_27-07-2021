@@ -30,14 +30,19 @@
         display: flex;
         align-items: flex-end;
     }
+    &:hover{
+        cursor: pointer;
+    }
 }
 .button {
     @include gradient;
     padding: 15px 40px;
-    border-radius: 15px;
+    @include shadow ;
+    @include radius ;
     color: white;
     width: fit-content;
     position: relative;
     left: calc(50% - 90px);
     margin-top: 40px;
+    cursor: pointer;
 }

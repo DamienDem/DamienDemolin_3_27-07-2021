@@ -29,5 +29,8 @@ nav {
             position: absolute;
             left: -8px;
         }
+        &__option:hover {
+            cursor: pointer;
+        }
     }
 }

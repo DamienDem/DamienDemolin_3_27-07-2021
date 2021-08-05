@@ -12,5 +12,8 @@ footer {
                 color: white;
             }
         }
+        & li:hover {
+            cursor: pointer;
+        }
     }
 }

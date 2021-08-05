@@ -84,6 +84,9 @@ header a {
   align-items: center;
   padding: 15px;
 }
+.presentation__item--button:hover {
+  cursor: pointer;
+}
 
 nav {
   display: grid;
@@ -117,6 +120,9 @@ nav .search-bar__option::before {
   color: white;
   position: absolute;
   left: -8px;
+}
+nav .search-bar__option:hover {
+  cursor: pointer;
 }
 
 main {
@@ -174,6 +180,9 @@ footer ul li {
 footer ul li a {
   color: white;
 }
+footer ul li:hover {
+  cursor: pointer;
+}
 
 .background-img img {
   max-height: 300px;
@@ -208,16 +217,21 @@ footer ul li a {
   display: flex;
   align-items: flex-end;
 }
+.item:hover {
+  cursor: pointer;
+}
 
 .button {
   background: linear-gradient(180deg, #ff79da 0%, #b260db 100%);
   padding: 15px 40px;
-  border-radius: 15px;
+  box-shadow: 0 0 15px #0000002e;
+  border-radius: 25px;
   color: white;
   width: fit-content;
   position: relative;
   left: calc(50% - 90px);
   margin-top: 40px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -12,11 +12,14 @@
             @include radius ;
             width: fit-content;
             height: 50px;
-            background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(178,96,219,1) 100%);
+            @include gradient;
             color: white;
             display: grid;
             align-items: center;
             padding: 15px;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 }
