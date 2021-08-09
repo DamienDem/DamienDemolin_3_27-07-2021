@@ -20,8 +20,9 @@ img {
   width: 100%;
 }
 
-h1 {
+.logo {
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+  font-size: 2em;
 }
 
 @font-face {
