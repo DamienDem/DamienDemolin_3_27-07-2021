@@ -1,5 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading {
+  0% {
+    transform: translateY(0);
+  }
+  99% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-9999px);
+  }
+}
+@keyframes opacify {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 *,
 :after,
 :before {
@@ -233,6 +260,64 @@ footer ul li:hover {
   left: calc(50% - 90px);
   margin-top: 40px;
   cursor: pointer;
+}
+
+header,
+section,
+nav,
+main,
+footer {
+  animation: opacify 3s cubic-bezier(0.94, 0.17, 0.96, 0.51) forwards;
+}
+
+.loader {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: calc(50% - 40px);
+  top: calc(50% - 40px);
+  animation: loading 3s forwards;
+}
+
+.loader::after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid transparent;
+  border-color: #9356DC transparent #99E2D0 transparent;
+  animation: loader 1.8s linear infinite;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading {
+  0% {
+    transform: translateY(0);
+  }
+  99% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-9999px);
+  }
+}
+@keyframes opacify {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
