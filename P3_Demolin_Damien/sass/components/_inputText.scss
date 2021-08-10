@@ -9,6 +9,11 @@
     }
     & input {
         border:none;
+        outline:0;
         background: #eaeaea;
+        & :focus {
+            border: none;
+            outline:0;
+        }
     }
 }

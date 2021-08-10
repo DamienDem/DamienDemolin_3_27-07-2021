@@ -87,7 +87,12 @@ header a {
 }
 .location input {
   border: none;
+  outline: 0;
   background: #eaeaea;
+}
+.location input :focus {
+  border: none;
+  outline: 0;
 }
 
 .presentation {
@@ -262,11 +267,7 @@ footer ul li:hover {
   cursor: pointer;
 }
 
-header,
-section,
-nav,
-main,
-footer {
+.reception {
   animation: opacify 3s cubic-bezier(0.94, 0.17, 0.96, 0.51) forwards;
 }
 
@@ -318,6 +319,29 @@ footer {
   100% {
     opacity: 1;
   }
+}
+.heart {
+  font-size: 2rem;
+  height: 2rem;
+  width: 2rem;
+}
+.heart .fa-heart {
+  font-size: 2rem;
+}
+.heart .fas {
+  color: transparent;
+}
+.heart .fas:hover {
+  font-size: 2.2rem;
+  background: linear-gradient(180deg, #ff79da 0%, #b260db 100%);
+  color: transparent;
+  transition: 1s;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.heart .far {
+  color: #1f1f1f;
 }
 
 /*# sourceMappingURL=style.css.map */
