@@ -8,12 +8,14 @@ footer {
         justify-content: space-between;
         & li {
             margin: 10px 0px;
+            cursor: pointer;
             & a {
                 color: white;
             }
         }
         & li:hover {
-            cursor: pointer;
+            text-decoration: underline;
+            transition: 0.4s;
         }
     }
 }

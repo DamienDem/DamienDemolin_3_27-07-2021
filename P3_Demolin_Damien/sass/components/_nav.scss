@@ -15,6 +15,11 @@ nav {
             padding: 15px;
             counter-increment: choice;
             width: fit-content;
+            &:hover {
+                filter: brightness(0.9);
+                box-shadow: 0 0 15px #00000073;
+                transition: 0.4s;   
+            }
             & i {
                 margin: 0px 10px;
             }

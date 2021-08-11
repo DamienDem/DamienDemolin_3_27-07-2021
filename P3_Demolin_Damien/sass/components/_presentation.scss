@@ -19,6 +19,7 @@
             padding: 15px;
             &:hover {
                 cursor: pointer;
+                @include button-hover;
             }
         }
     }

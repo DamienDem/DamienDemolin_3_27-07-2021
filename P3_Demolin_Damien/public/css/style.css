@@ -111,7 +111,7 @@ header a {
   border-radius: 25px;
   width: fit-content;
   height: 50px;
-  background: linear-gradient(180deg, #ff79da 0%, #b260db 100%);
+  background: linear-gradient(180deg, #ff7ad9 0%, #b261db 100%);
   color: white;
   display: grid;
   align-items: center;
@@ -119,6 +119,9 @@ header a {
 }
 .presentation__item--button:hover {
   cursor: pointer;
+  box-shadow: 0 0 15px #00000073;
+  filter: brightness(1.1);
+  transition: 0.4s;
 }
 
 nav {
@@ -140,6 +143,11 @@ nav .search-bar__option {
   padding: 15px;
   counter-increment: choice;
   width: fit-content;
+}
+nav .search-bar__option:hover {
+  filter: brightness(0.9);
+  box-shadow: 0 0 15px #00000073;
+  transition: 0.4s;
 }
 nav .search-bar__option i {
   margin: 0px 10px;
@@ -209,12 +217,14 @@ footer ul {
 }
 footer ul li {
   margin: 10px 0px;
+  cursor: pointer;
 }
 footer ul li a {
   color: white;
 }
 footer ul li:hover {
-  cursor: pointer;
+  text-decoration: underline;
+  transition: 0.4s;
 }
 
 .background-img img {
@@ -255,7 +265,7 @@ footer ul li:hover {
 }
 
 .button {
-  background: linear-gradient(180deg, #ff79da 0%, #b260db 100%);
+  background: linear-gradient(180deg, #ff7ad9 0%, #b261db 100%);
   padding: 15px 40px;
   box-shadow: 0 0 15px #0000002e;
   border-radius: 25px;
@@ -265,6 +275,11 @@ footer ul li:hover {
   left: calc(50% - 90px);
   margin-top: 40px;
   cursor: pointer;
+}
+.button:hover {
+  box-shadow: 0 0 15px #00000073;
+  filter: brightness(1.1);
+  transition: 0.4s;
 }
 
 .reception {
@@ -293,33 +308,6 @@ footer ul li:hover {
   animation: loader 1.8s linear infinite;
 }
 
-@keyframes loader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes loading {
-  0% {
-    transform: translateY(0);
-  }
-  99% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-9999px);
-  }
-}
-@keyframes opacify {
-  0% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .heart {
   font-size: 2rem;
   height: 2rem;
@@ -333,7 +321,7 @@ footer ul li:hover {
 }
 .heart .fas:hover {
   font-size: 2.2rem;
-  background: linear-gradient(180deg, #ff79da 0%, #b260db 100%);
+  background: linear-gradient(180deg, #ff7ad9 0%, #b261db 100%);
   color: transparent;
   transition: 1s;
   -webkit-background-clip: text;

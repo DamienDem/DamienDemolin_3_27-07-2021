@@ -45,4 +45,7 @@
     left: calc(50% - 90px);
     margin-top: 40px;
     cursor: pointer;
+    &:hover {
+        @include button-hover;
+    }
 }
