@@ -16,7 +16,7 @@ nav {
             counter-increment: choice;
             width: fit-content;
             &:hover {
-                filter: brightness(0.9);
+                filter: brightness(1);
                 box-shadow: 0 0 15px #00000073;
                 transition: 0.4s;   
             }

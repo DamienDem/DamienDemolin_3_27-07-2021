@@ -7,15 +7,32 @@
     border-radius: 45px 45px 0 0;
     position: relative;
     margin-top: -40px;
+    z-index: 1;
     & .title {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin: 30px 0;
     }
-    & .title {
-        margin: 40px 0;
+    & h2 {
+        position: relative;
+        padding-bottom: 3px;
+        width: fit-content;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            color: $color-tertiary;
+            left: 0;
+            bottom: 0;
+            z-index: 2;
+            background: $color-tertiary;
+        }
     }
+
 }
+
 .item {
     position: relative;
     display: flex;
@@ -26,6 +43,8 @@
     border-radius: 15px;
     background: white;
     margin: 15px 0;
+    transform: scale(0);
+    animation: appartion 1s cubic-bezier(0,0,.17,1) both;
     &__description  {
         overflow: hidden;
         white-space: nowrap;
@@ -91,3 +110,15 @@
         @include button-hover;
     }
 }
+@keyframes appartion {
+    0% {
+              transform:  scale(0);
+                 opacity: 0;
+      
+    }
+    100% {
+      
+              transform:  scale(1);
+      opacity: 1;
+    }
+  }
