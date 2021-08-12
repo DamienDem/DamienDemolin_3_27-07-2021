@@ -150,6 +150,13 @@ nav .search-bar {
   counter-reset: choice;
   position: relative;
 }
+@media screen and ( min-width:1300px) {
+  nav .search-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+  }
+}
 nav .search-bar__option {
   margin: 15px 0;
   border-radius: 15px;
@@ -408,6 +415,7 @@ footer ul li:hover {
   color: transparent;
   transition: 1s;
   -webkit-background-clip: text;
+  background-clip: content-box;
 }
 .heart .far {
   color: #1f1f1f;

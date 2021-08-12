@@ -7,6 +7,10 @@ nav {
         flex-direction: column;
         counter-reset: choice;
         position: relative;
+        @media (min-widht: 1300px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
         &__option {
             margin: 15px 0;
             border-radius: 15px;

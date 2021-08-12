@@ -13,6 +13,7 @@
             color: transparent;
             transition: 1s;
             -webkit-background-clip: text;
+            background-clip: content-box;
         }
     }
     & .far {
