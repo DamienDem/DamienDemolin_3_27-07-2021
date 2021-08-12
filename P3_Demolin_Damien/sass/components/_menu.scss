@@ -1,37 +1,46 @@
 .background-img {
     & img {
         max-height: 300px;
-        position: relative;
-        top:40px;
     }
 }
 .menu {
     border-radius: 45px 45px 0 0;
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr;
+    margin-top: -40px;
     & .title {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    & .starter {
-        margin-top: 40px;
+    & .title {
+        margin: 40px 0;
     }
 }
 .item {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    flex: 1;
+    width:100%;
+    justify-content: flex-end;
     padding: 10px;
     border-radius: 15px;
     background: white;
     margin: 15px 0;
     &__description  {
-        display: inline-block;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;  
+        flex: 1;
+        & h3 {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis; 
+        }
+        & p {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis; 
+        }
     }
     &__price {
         display: flex;

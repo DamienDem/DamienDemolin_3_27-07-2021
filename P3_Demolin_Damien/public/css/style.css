@@ -82,7 +82,6 @@ header {
 header .header--menu {
   position: relative;
   text-align: center;
-  top: 20px;
 }
 header a {
   position: absolute;
@@ -184,7 +183,7 @@ nav .search-bar__option:hover {
 
 main {
   background-color: #eaeaea;
-  padding: 40px 20px;
+  padding: 20px 10px;
 }
 main .restaurants {
   display: grid;
@@ -245,36 +244,45 @@ footer ul li:hover {
 
 .background-img img {
   max-height: 300px;
-  position: relative;
-  top: 40px;
 }
 
 .menu {
   border-radius: 45px 45px 0 0;
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr;
+  margin-top: -40px;
 }
 .menu .title {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.menu .starter {
-  margin-top: 40px;
+.menu .title {
+  margin: 40px 0;
 }
 
 .item {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  flex: 1;
+  width: 100%;
+  justify-content: flex-end;
   padding: 10px;
   border-radius: 15px;
   background: white;
   margin: 15px 0;
 }
 .item__description {
-  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+.item__description h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.item__description p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
