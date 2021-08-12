@@ -150,11 +150,10 @@ nav .search-bar {
   counter-reset: choice;
   position: relative;
 }
-@media screen and ( min-width:1300px) {
+@media (min-width: 1300px) {
   nav .search-bar {
     flex-direction: row;
     justify-content: space-between;
-    width: 30%;
   }
 }
 nav .search-bar__option {
@@ -165,6 +164,11 @@ nav .search-bar__option {
   padding: 15px;
   counter-increment: choice;
   position: relative;
+}
+@media (min-width: 1300px) {
+  nav .search-bar__option {
+    width: 30%;
+  }
 }
 nav .search-bar__option:hover {
   filter: brightness(1);
@@ -196,6 +200,12 @@ main .restaurants {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
 }
+@media (min-width: 1300px) {
+  main .restaurants {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
 main .restaurants .restaurant--new::after {
   position: absolute;
   content: "Nouveau";
@@ -211,6 +221,11 @@ main .restaurants .restaurant {
   border-radius: 25px;
   box-shadow: 0 0 15px #0000002e;
   background: white;
+}
+@media (min-width: 1300px) {
+  main .restaurants .restaurant {
+    margin: 15px;
+  }
 }
 main .restaurants .restaurant img {
   border-radius: 15px 15px 0px 0px;
@@ -415,7 +430,7 @@ footer ul li:hover {
   color: transparent;
   transition: 1s;
   -webkit-background-clip: text;
-  background-clip: content-box;
+  background-clip: text;
 }
 .heart .far {
   color: #1f1f1f;
