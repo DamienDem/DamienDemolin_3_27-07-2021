@@ -20,18 +20,51 @@
     }
 }
 .item {
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding: 10px;
     border-radius: 15px;
     background: white;
     margin: 15px 0;
+    &__description  {
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;  
+    }
     &__price {
         display: flex;
         align-items: flex-end;
     }
+    &__check {
+        display: none;
+        position: absolute;
+        background: $color-tertiary;
+        border-radius: 0 15px 15px 0;
+        right: -50px;
+        top: 0;
+        padding: 0 15px;
+        height: 100%;
+        color: white;
+    }
+    &:hover .check{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: slide-left 0.5s ease-in-out forwards;
+        transform-origin: right;
+    }
+    &:hover .fa-check-circle {
+        animation: rotate-center 0.5s ease-in-out both;
+
+    }
     &:hover{
         cursor: pointer;
+    }
+    &:hover .price {
+        padding-right: 50px;
+        transition: 0.5s;
     }
 }
 .button {
