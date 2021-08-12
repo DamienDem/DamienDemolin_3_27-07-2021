@@ -3,8 +3,8 @@ nav {
     grid-template-rows: 1fr 4fr;
     padding: 15px;
     & .search-bar {
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
+        display: flex;
+        flex-direction: column;
         counter-reset: choice;
         position: relative;
         &__option {
@@ -14,7 +14,7 @@ nav {
             background: #eaeaea;
             padding: 15px;
             counter-increment: choice;
-            width: fit-content;
+            position: relative;
             &:hover {
                 filter: brightness(1);
                 box-shadow: 0 0 15px #00000073;

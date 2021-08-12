@@ -145,8 +145,8 @@ nav {
   padding: 15px;
 }
 nav .search-bar {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
   counter-reset: choice;
   position: relative;
 }
@@ -157,7 +157,7 @@ nav .search-bar__option {
   background: #eaeaea;
   padding: 15px;
   counter-increment: choice;
-  width: fit-content;
+  position: relative;
 }
 nav .search-bar__option:hover {
   filter: brightness(1);
