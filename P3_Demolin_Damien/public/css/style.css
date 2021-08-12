@@ -280,6 +280,12 @@ footer ul li:hover {
   align-items: center;
   margin: 30px 0;
 }
+@media (min-width: 1300px) {
+  .menu__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 .menu h2 {
   position: relative;
   padding-bottom: 3px;
@@ -309,6 +315,12 @@ footer ul li:hover {
   margin: 15px 0;
   transform: scale(0);
   animation: appartion 1s cubic-bezier(0, 0, 0.17, 1) both;
+}
+@media (min-width: 1300px) {
+  .item {
+    margin: 30px;
+    width: auto;
+  }
 }
 .item__description {
   overflow: hidden;
