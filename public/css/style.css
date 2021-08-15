@@ -419,6 +419,13 @@ footer ul li:hover {
   font-size: 2rem;
   height: 2rem;
   width: 2rem;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+}
+.heart:hover .far {
+  color: transparent;
 }
 .heart .fa-heart {
   font-size: 2rem;
@@ -427,7 +434,7 @@ footer ul li:hover {
   color: transparent;
 }
 .heart .fas:hover {
-  font-size: 2.2rem;
+  font-size: 2rem;
   background: linear-gradient(180deg, #ff7ad9 0%, #b261db 100%);
   color: transparent;
   transition: 1s;
