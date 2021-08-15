@@ -60,16 +60,6 @@
         white-space: nowrap;
         text-overflow: ellipsis;  
         flex: 1;
-        & h3 {
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis; 
-        }
-        & p {
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis; 
-        }
     }
     &__price {
         display: flex;
