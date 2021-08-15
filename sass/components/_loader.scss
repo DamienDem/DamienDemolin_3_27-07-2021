@@ -9,6 +9,7 @@
     left: calc(50% - 40px);
     top: calc(50% - 40px);
     animation: loading 3s forwards;
+    z-index: 2;
     
   }
   .loader::after {
