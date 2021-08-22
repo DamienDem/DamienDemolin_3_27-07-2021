@@ -23,6 +23,7 @@ main {
             @include radius;
             @include shadow;
             background: white;
+            font-family:'Roboto', Arial, Helvetica, sans-serif;
             @media (min-width: 1300px){
                 margin: 15px;
             }

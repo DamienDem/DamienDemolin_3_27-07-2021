@@ -104,6 +104,7 @@ header a {
   border: none;
   outline: 0;
   background: #eaeaea;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 .location input :focus {
   border: none;
@@ -117,6 +118,7 @@ header a {
   align-items: center;
   justify-items: center;
   padding: 30px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 .presentation__item {
   text-align: center;
@@ -149,6 +151,7 @@ nav .search-bar {
   flex-direction: column;
   counter-reset: choice;
   position: relative;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 @media (min-width: 1300px) {
   nav .search-bar {
@@ -221,6 +224,7 @@ main .restaurants .restaurant {
   border-radius: 25px;
   box-shadow: 0 0 15px #0000002e;
   background: white;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 @media (min-width: 1300px) {
   main .restaurants .restaurant {
@@ -255,6 +259,7 @@ footer ul {
 footer ul li {
   margin: 10px 0px;
   cursor: pointer;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 footer ul li a {
   color: white;
@@ -279,6 +284,8 @@ footer ul li:hover {
   justify-content: space-between;
   align-items: center;
   margin: 30px 0;
+  font-size: 2rem;
+  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
 }
 @media (min-width: 1300px) {
   .menu__container {
@@ -290,6 +297,7 @@ footer ul li:hover {
   position: relative;
   padding-bottom: 3px;
   width: fit-content;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 .menu h2::after {
   content: "";
@@ -327,6 +335,7 @@ footer ul li:hover {
   white-space: nowrap;
   text-overflow: ellipsis;
   flex: 1;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 .item__price {
   display: flex;

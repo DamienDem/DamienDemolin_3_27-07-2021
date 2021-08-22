@@ -13,6 +13,8 @@
         justify-content: space-between;
         align-items: center;
         margin: 30px 0;
+        font-size: 2rem;
+        font-family: 'Shrikhand',Arial, Helvetica, sans-serif ;
     }
     &__container {
         @media (min-width: 1300px){
@@ -24,6 +26,7 @@
         position: relative;
         padding-bottom: 3px;
         width: fit-content;
+        font-family:'Roboto', Arial, Helvetica, sans-serif;
         &::after {
             content: '';
             position: absolute;
@@ -58,6 +61,7 @@
         white-space: nowrap;
         text-overflow: ellipsis;  
         flex: 1;
+        font-family:'Roboto', Arial, Helvetica, sans-serif;
     }
     &__price {
         display: flex;
