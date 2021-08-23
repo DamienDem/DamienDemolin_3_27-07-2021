@@ -347,6 +347,11 @@ footer ul li:hover {
   flex: 1;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
+.item__description h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 .item__price {
   display: flex;
   align-items: flex-end;
@@ -406,16 +411,6 @@ footer ul li:hover {
   transition: 0.4s;
 }
 
-@keyframes appartion {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 .reception {
   animation: opacify 3s cubic-bezier(0.94, 0.17, 0.96, 0.51) forwards;
 }

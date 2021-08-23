@@ -62,6 +62,11 @@
         text-overflow: ellipsis;  
         flex: 1;
         font-family:'Roboto', Arial, Helvetica, sans-serif;
+        & h3 {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis; 
+        }
     }
     &__price {
         display: flex;
@@ -118,13 +123,3 @@
         @include button-hover;
     }
 }
-@keyframes appartion {
-    0% {
-        transform:  scale(0);
-        opacity: 0; 
-    }
-    100% {
-        transform:  scale(1);
-        opacity: 1;
-    }
-  }
